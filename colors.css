@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(3, 13, 102);
+}
+.Parent{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 40%;
+}
+.Card-Flip{
+    width: 400px;
+    height: 350px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20%;
+    left: 35.6%;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.Card-Flip:hover{
+    transform: rotateY(180deg);
+    transition: 2s;
+}
+.Front-Page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 252, 253);
+    border-radius: 30px;
+    backface-visibility: hidden;
+}
+.Front-Page p{
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+
+    padding-top: 23%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.Back-Page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 252, 253);
+    border-radius: 30px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.Back-Page p{
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+    padding-top: 23%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.Buttons{
+    width: 100%;
+    position: absolute;
+    top: 78%;
+    left: 33%;
+}
+button{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    border-style: none;
+}
+button:hover {
+    background-color: rgb(201, 201, 201);
+}
+button:active{
+    background-color: rgb(122, 122, 122);
+}
